@@ -1,0 +1,63 @@
+// COLORS
+
+$white: white;
+$light-grey: #ececec;
+$transparent-white: rgba(255, 255, 255, 0.9f);
+$black: #333;
+$void: #0E0816;
+$purple: #A239CA;
+$blue: #4717F6;
+
+$light-blue: #7CDBD5;
+$aqua: #02C8A7;
+
+$coral: #F53240;
+$grey-pink: #E7DFDD;
+
+$gold: #F9BE02;
+
+// FONTS
+
+$N: 'Neuton', serif;
+$PT: 'PT Sans', sans-serif;
+
+$xsm: 10px;
+$sm: 11px;
+$medium: 14px;
+
+h1, h2, h3 {
+	font-family: $PT;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h4, h5 { 
+	font-family: $PT; 
+	font-weight: bold; 
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+a {
+	font-family: $PT;
+	font-weight: normal;
+	text-decoration: none;
+	color: $black;
+	padding: 0 0 2px 0;
+}
+
+p {
+	font-family: $N;
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+u {
+	text-decoration: none;
+	padding: 0 0 1px 0;
+}
+
+// TRANSITIONS
+
+$trans-medium: 0.3s ease-out;

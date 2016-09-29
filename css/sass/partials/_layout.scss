@@ -1,0 +1,80 @@
+// #MAIN
+
+body {
+	background: $light-grey;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: $black;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: all;
+}
+
+// #HEADINGS
+
+h1 {
+	display: inline-block;
+	padding: 0 0 6px 0;
+	border-bottom: 4px solid $aqua;
+}
+
+h4 {
+	display: inline-block;
+	margin: 40px 0 0 0;
+	padding: 0 0 3px 0;
+	border-bottom: 2px solid $light-blue;
+}
+
+h5 {
+	display: inline-block;
+	margin: 20px 0 0 0;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+a {
+	border-bottom: 2px solid $light-blue;
+}
+
+u {
+	border-bottom: 2px solid $light-blue;
+}
+
+// #BUTTONS
+
+button:active {
+	outline: none;
+	border: none;
+}
+
+// #NAV
+
+
+
+// #MAIN
+
+#container {
+	@include outer-container;
+	background: $white;
+}
+
+section {
+	@include span-columns(8);
+	@include shift(2);
+}
+
+
+
+// #FOOTER
+
