@@ -1,4 +1,4 @@
-// #MAIN
+// #ALL
 
 body {
 	background: $light-grey;
@@ -19,37 +19,10 @@ body {
 	clear: all;
 }
 
-// #HEADINGS
 
-h1 {
-	display: inline-block;
-	padding: 0 0 6px 0;
-	border-bottom: 4px solid $aqua;
-}
+// #NAV
 
-h4 {
-	display: inline-block;
-	margin: 40px 0 0 0;
-	padding: 0 0 3px 0;
-	border-bottom: 2px solid $light-blue;
-}
 
-h5 {
-	display: inline-block;
-	margin: 20px 0 0 0;
-}
-
-li {
-	margin-bottom: 15px;
-}
-
-a {
-	border-bottom: 2px solid $light-blue;
-}
-
-u {
-	border-bottom: 2px solid $light-blue;
-}
 
 // #BUTTONS
 
@@ -57,9 +30,6 @@ button:active {
 	outline: none;
 	border: none;
 }
-
-// #NAV
-
 
 
 // #MAIN
@@ -75,6 +45,94 @@ section {
 }
 
 
+// #HEADINGS
+
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
+	h1 {
+		display: inline-block;
+		margin: 150px 0 0 0;
+		padding: 0 0 6px 0;
+	}
+}
+
+.logo {
+	@include span-columns (8);
+	@include shift(2);
+	text-align: center;
+	h1 {
+		display: inline-block;
+		font-size: 2.75em;
+		border-bottom: 5px solid $grey;
+	}
+}
+
+h4 {
+	display: inline-block;
+	margin: 40px 0 0 0;
+	padding: 0 0 3px 0;
+}
+
+h5 {
+	display: inline-block;
+	margin: 20px 0 0 0;
+}
+
+li {
+	margin-bottom: 15px;
+}
+
+
+// #COLORSWAP
+
+.sec1 {
+	h1 {
+		border-bottom: 4px solid $aqua;
+	}
+	h4 {
+		border-bottom: 2px solid $light-blue;
+	}
+	a {
+		border-bottom: 2px solid $light-blue;
+	}
+	u {
+		border-bottom: 2px solid $light-blue;
+	}
+}
+
+.main {
+	h2{
+		&:nth-of-type(1){
+			span {
+				border-bottom: 3px solid $coral;
+			}
+		}
+		&:nth-of-type(2){
+			span {
+				border-bottom: 3px solid $grey-pink;
+			}
+		}
+		&:nth-of-type(3){
+			span {
+				border-bottom: 3px solid $gold;
+			}
+		}
+		&:nth-of-type(4){
+			span {
+				border-bottom: 3px solid $aqua;
+			}
+		}
+		&:nth-of-type(5){
+			span {
+				border-bottom: 3px solid $blue;
+			}
+		}
+		&:nth-of-type(6){
+			span {
+				border-bottom: 3px solid $purple;
+			}
+		}
+	}
+}
 
 // #FOOTER
 
